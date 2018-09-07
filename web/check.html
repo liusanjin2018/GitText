@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-1.11.2.js"></script>
+    <script>
+        $(function () {
+            $("input[type=text]").blur(function () {
+                var inp = $("input[type=text]").val();
+                var checkName = /^[a-zA-Z][0-9a-zA-Z_]{5,29}$/;
+                if(checkName.test(inp)){
+                    $("#two").show();
+                    $("#two").text("6-30位字母、数字或'_',字母开头");
+                    $("#two").css("color","#FDA66F");
+                    $("#second").hide();
+                }else{
+                    $("#second").show();
+                    $("#second").text("用户名长度不得少于6个字符");
+                    $("#second").css("color","red");
+                    $("#two").hide();
+                }
+            });
+        });
+    </script>
+    <style>
+        #one{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span id="one">*</span>用户名：<input type="text" placeholder="用户名设置成功后不可修改"/><span id="two"></span>
+    </div>
+    <div id="second"></div>
+</body>
+</html>

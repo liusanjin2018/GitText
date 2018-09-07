@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #sp{
+            width:150px;
+            height: 50px;
+        }
+        #big{
+            width:250px;
+            height: 200px;
+            border:1px solid red;
+            margin: auto;
+            margin-top: 200px;
+        }
+        #one{
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <form action="regist" method="post">
+        <div id="big">
+            <div id="one">
+                请输入注册信息
+            </div>
+            <div>用户名：<input type="text" name="username"/></div>
+            <div>密码：<input type="password" name="psw"/></div>
+            <div>
+                信息来源：<div id="sp"><input type="checkbox" name="check" value="报刊"/>报刊
+                <input type="checkbox" name="check" value="网络" />网络
+                <input type="checkbox" name="check" value="朋友推荐"/>朋友推荐
+                <input type="checkbox" name="check" value="电视"/>电视</div>
+            </div>
+            <div><input type="submit" value="提交"/><input type="reset" value="取消"/> </div>
+        </div>
+
+    </form>
+
+</body>
+</html>
