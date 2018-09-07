@@ -13,6 +13,7 @@
 </head>
 <body>
     <div>您输入的注册信息</div>
+    <div>您输入的注册信息</div>
     <div>用户名：<span>${requestScope.username}</span></div>
     <div>密码：<span>${requestScope.psw}</span></div>
     <div>信息来源：<span>
